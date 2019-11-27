@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<user>
+    <general_info>
+        <fio>фио</fio>
+        <sex>M</sex>
+        <birthdate>2000-01-01</birthdate>
+    </general_info>
+    <parameters>
+        <height>10</height>
+        <weight>250</weight>
+    </parameters>
+    <contact_info>
+        <mobile_phone>0123456789</mobile_phone>
+        <mobile_phone>0987654321</mobile_phone>
+    </contact_info>
+</user> 

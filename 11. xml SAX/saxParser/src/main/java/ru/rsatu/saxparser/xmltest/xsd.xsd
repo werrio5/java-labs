@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="user">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="general_info">
+          <xs:complexType>
+            <xs:sequence>
+                <xs:element name="fio" type="xs:string"/>                  
+                  <xs:element name="sex">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="M"/>
+                            <xs:enumeration value="F"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  <xs:element name="birthdate" type="xs:date"/>
+                </xs:sequence>
+              </xs:complexType>
+          </xs:element>   
+        
+        <xs:element name="parameters">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="height">
+                <xs:simpleType>
+                  <xs:restriction base="xs:integer">
+                    <xs:minInclusive value="0"/>
+                    <xs:maxInclusive value="300"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="weight">
+                <xs:simpleType>
+                  <xs:restriction base="xs:integer">
+                    <xs:minInclusive value="0"/>
+                    <xs:maxInclusive value="300"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="contact_info">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mobile_phone" maxOccurs="3">
+                <xs:simpleType>
+                  <xs:restriction base="xs:integer">
+                    <xs:pattern value="[0-9]{10}"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema> 
