@@ -1,0 +1,4 @@
+com/mycompany/proxyclasstest/MainClass.class
+com/mycompany/proxyclasstest/MainClass$Original.class
+com/mycompany/proxyclasstest/MainClass$Handler.class
+com/mycompany/proxyclasstest/MainClass$If.class
