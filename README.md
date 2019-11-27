@@ -1,6 +1,6 @@
 # java-labs
-proxyclass
+//proxyclass
 lab0
 classloader
-DOM
-SAX
+//DOM
+//SAX
