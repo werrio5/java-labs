@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: org.acme.rest.json.FruitResourceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.733 s <<< FAILURE! - in org.acme.rest.json.FruitResourceTest
+testHelloEndpoint  Time elapsed: 3.53 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Response body doesn't match expectation.
+Expected: is "hello"
+  Actual: [{"description":"Winter fruit","name":"???"},{"description":"Tropical fruit","name":"Pineapple"}]
+
+	at org.acme.rest.json.FruitResourceTest.testHelloEndpoint(FruitResourceTest.java:18)
+
