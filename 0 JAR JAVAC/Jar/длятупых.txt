@@ -1,0 +1,2 @@
+jar -cvfm jar.jar mf.mf main/main.class notmain/notmain.class
+java -jar jar.jar
